@@ -6,5 +6,4 @@ Flask-SQLAlchemy
 supabase
 python-dotenv
 gunicorn
-gevent
-gevent-websocket
+eventlet
