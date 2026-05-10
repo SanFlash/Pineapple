@@ -1,0 +1,10 @@
+Flask
+Flask-Cors
+Flask-JWT-Extended
+Flask-SocketIO
+Flask-SQLAlchemy
+supabase
+python-dotenv
+gunicorn
+gevent
+gevent-websocket

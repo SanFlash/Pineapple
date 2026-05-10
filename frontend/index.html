@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pineapple 🍍 | AI Job Ecosystem</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- ThreeJS Background Container -->
+    <div id="canvas-container"></div>
+    
+    <!-- Ambient glowing orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <nav class="nav-content">
+            <a href="/" class="logo" data-link>
+                <span class="logo-icon">🍍</span>
+                <span class="logo-text">Pineapple</span>
+            </a>
+            
+            <div id="nav-actions" class="nav-actions">
+                <!-- Dynamically injected based on auth state -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- Notification Toast -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Main View Container -->
+    <main id="app-root" class="app-main">
+        <!-- Views are injected here -->
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="/js/app.js" type="module"></script>
+</body>
+</html>

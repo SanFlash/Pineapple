@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: pineapple-app
+    env: python
+    buildCommand: "pip install -r backend/requirements.txt"
+    startCommand: "gunicorn --chdir backend -k geventwebsocket.gunicorn.workers.GeventWebSocketWorker -w 1 app:app"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: RENDER
+        value: "true"
+    disk:
+      name: pineapple-data
+      mountPath: /var/data
+      sizeGB: 1
